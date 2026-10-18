@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>С Днём отца!</title>
+<meta name="description" content="Одна кнопка — и поздравление для папы">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<button class="theme" id="theme" aria-label="Сменить тему">◐</button>
+
+<main class="stage">
+  <div class="tag" id="tag">День отца · третье воскресенье октября</div>
+  <h1>Для самого<br>лучшего папы</h1>
+  <p class="sub">Внутри подарок. Нажми на кнопку, чтобы открыть.</p>
+  <button class="gift" id="gift" aria-label="Открыть подарок">
+    <span class="glow"></span><span class="body"></span><span class="lid"></span>
+    <span class="bow"><i></i><i></i></span>
+  </button>
+  <button class="go" id="go">Открыть подарок</button>
+</main>
+
+<section class="ov" id="ov" aria-live="polite" role="dialog" aria-label="Поздравление">
+  <div class="in">
+    <span class="medal" aria-hidden="true">🏅</span>
+    <h2>Папа, с Днём отца!</h2>
+    <div class="txt" id="txt">
+      <span>Я хочу сказать тебе спасибо за то, что ты всегда рядом — и в трудную минуту, и в моменты радости.</span>
+      <span> Ты мой пример, моя опора и самый близкий друг.</span>
+      <span> Спасибо за твоё терпение, мудрость и бесконечную любовь.</span>
+      <span> Я тебя очень люблю и горжусь тобой!</span>
+    </div>
+    <div class="acts" id="acts">
+      <button class="p" id="share">Отправить папе</button>
+      <button id="copy">Копировать</button>
+      <button id="again">Ещё раз</button>
+    </div>
+  </div>
+</section>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
